@@ -6,7 +6,43 @@
 	box-sizing: border-box;
 }
 
+
+
+
+/***********************
+	KEYFRAMES
+***********************/
+
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-color:#b4cfe0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
 body {
+	background-color: #6b92b9; 
+	background-image: url('../img/snow.png'), url('../img/snow3.png'), url('../img/snow2.png');
+	
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
 }
 
 form {
@@ -26,6 +62,7 @@ input {
 h1 {
 		font-family: 'Righteous', sans-serif;
 		text-align: center;
+		font-size: 5em;
 }
 
 a {
@@ -53,6 +90,8 @@ input[type="text"] {
 	padding: 15px;
 	width: 100%;
 	margin-bottom: 30px;
+	box-shadow: 6px 3px 52px 6px gray inset;
+	border-radius: 27px;
 }
 
 
@@ -76,7 +115,6 @@ form {
 	margin: 10px auto;
 	padding: 10px 20px;
 	border-radius: 8px;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
 }
 
@@ -133,7 +171,11 @@ footer {
 ***********************/
 
 * {
-	color: #fff;
+	color: black;
+}
+
+h1 {
+	text-shadow: 2px 2px gray;
 }
 
 header {
