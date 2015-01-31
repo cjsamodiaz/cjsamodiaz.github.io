@@ -1,0 +1,161 @@
+/***********************
+	GENERAL    fonts(Righteous,Nunito)
+***********************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+}
+
+form {
+}
+
+input {
+	line-height:  normal;
+	font: inherit;
+}
+
+/***********************
+	HEADER
+***********************/
+
+
+
+h1 {
+		font-family: 'Righteous', sans-serif;
+		text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/***********************
+	WRAPPER
+***********************/
+
+
+
+
+
+/***********************
+	FORMS
+***********************/
+
+input[type="text"] {
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+
+
+label {
+	font-size: 1.50em;
+	display: block;
+	margin-bottom: 8px;
+}
+
+label[for="email"], label[for="password"] {
+ 		font-size: 1.50em;
+}
+
+
+
+form {
+	font-family: 'Nunito', sans-serif;
+	max-width: 300px;
+	margin: 10px auto;
+	padding: 10px 20px;
+	border-radius: 8px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+
+
+/***********************
+	FIELDSET
+***********************/
+
+fieldset {
+	text-align: center;
+	border: none;
+	margin-bottom: 30px;
+}
+
+input#remember_me {
+	padding: 0;
+	margin: 0 4px 8px 0;
+}
+
+label.light {
+	font-size: 0.75em;
+	width: 50%;
+	display: inline;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+button[type="signin"] {
+	text-align: center;
+	width: 47%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/***********************
+	FOOTER
+***********************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	display: block;
+}
+
+
+/***********************
+	COLORS
+***********************/
+
+* {
+	color: #fff;
+}
+
+header {
+}
+
+input[type="text"] {
+	background: rgba(255,255,255,0.1);
+	background-color: #e8eeef;
+	color: #8a97a0;
+}
+
+
+form {
+}
+
+
+button {
+	color: #fff;
+	background-color: gray;
+	border: black;
+}
+
+footer {
+	color: #fff;
+}
