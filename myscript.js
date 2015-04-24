@@ -363,7 +363,7 @@ console.log(my_array.toString());
 
 /* JavaScript Strings */
 
-
+/*
 var name = "Jim";
 console.log(name);
 
@@ -408,3 +408,221 @@ if (whole.indexOf("W") !== -1){
 }
 
 console.log(whole.charAt(1));
+
+"Hello World!"
+var world = whole.substr(6, 5);
+console.log(world);
+
+console.log(whole.toLowerCase());
+console.log(whole.toUpperCase());
+console.log(whole);
+
+var quick = "The quick brown fox jumps over the lazy dog";
+var quickLength	 = quick.length;
+var indexOfBrown = quick.indexOf("brown");
+var tenthCharacter = quick.charAt(9);
+var wordBrown = quick.substr(10, 5);
+	console.log(wordBrown);
+var quickUpper = quick.toUpperCase();
+var quickLower = quick.toLowerCase();
+*/
+
+/*
+var first = "Hello"
+var second = "hello"
+
+if (first.toLowerCase() === second.toLowerCase()) {
+	console.log("The strings are equal");
+} else {
+	console.log("The strings are different");
+}
+
+function compare(a, b) {
+	console.log(a + " <= " + b, a <= b);
+}
+
+compare('a', 'b');
+compare('a', 'A');
+compare('apples', 'oranges');
+compare('apples', 'applications');
+compare('app', 'apples');
+compare('hello', 'hello');
+*/
+
+/* Javascript Numbers */
+
+/*
+var a = 11;
+		b = -123;
+
+var c = 1.5;
+var d = 123.456789;
+
+var e = 5;
+var f = 12.3;
+var result = e * f;
+
+var g = 1.23E16;
+
+var h = 012;
+// ff 00 00
+
+var i = 0xff0000;
+
+var j = parseInt("019");
+var k = parseInt("010111", 8);
+var l = parseInt("there are 23 people", 10);
+console.log(l === NaN);
+
+var m = 10 == "ten"; //false
+
+*/
+
+// Javascript function
+
+/*
+function sayHello (name, greeting) {
+	if (typeof name === 'undefined'){
+		return;
+	}
+	if (typeof greeting === 'undefined'){
+		greeting = 'Hello';
+	}
+	console.log(greeting + " World! " + name);
+
+	return name.length;
+}
+
+console.log(sayHello("James", "Greetings"));
+
+console.log(sayHello("Jim"));
+
+console.log(sayHello())
+*/
+
+/*
+     function arrayCounter (array) {
+        if (typeof array === 'string' ||typeof array === 'number' ||typeof array === 'undefined'){
+        return 0;
+      }
+        return array.length;
+      }
+*/
+
+/*
+var color = 'black';
+var number = 1;
+
+console.log(color);
+
+function showColor () {
+	var color = 'green';
+	var number = 2;
+
+	console.log('showColor color', color);
+	console.log('showColor number', number);
+}
+
+showColor();
+
+console.log('Global color', color)
+console.log('Global number', number)
+*/
+
+/*
+ var myFunction = function  () {
+	console.log('myFunction was called');
+	undeclaredVariable;
+}
+
+var callTwice = function (targetFunction) {
+	targetFunction();
+	targetFunction();
+}
+
+callTwice(function namedFunction() {
+	console.log("Hello from anon function");
+	undeclaredVariable;
+});
+*/
+
+/*
+(function () {
+	var a, b, c;
+//...
+	console.log('from anon function')
+})(1, "hello");
+*/
+
+//Example
+
+/*
+var button = document.getElementById('action');
+var input = document.getElementById('text_field');
+
+button.addEventListener('click', function () {
+	console.log('clicked');
+});
+
+button.addEventListener('click', function () {
+	console.log('clicked');
+	input.setAttribute('value', 'Hello World');
+});
+
+function example ( ) {
+  var color = "red";
+  return color;
+}
+
+example("blue");
+
+console.log(color);
+*/
+
+/*
+var animal = "cow";
+
+function display (animal) {
+  console.log(animal);
+}
+
+animal = "pig"
+
+display("horse");
+*/
+
+/*
+var nick = { 
+	name: "Nick", 
+	greet: function () {
+		console.log("Hello, I am " + jim.name)
+	}
+};
+
+jim.name = "James";
+
+jim.greet("Hello " + jim.name);
+*/
+
+var personPrototype = {
+	name: 'Anonymous',
+	greet: function (name, mood) {
+		name = name || "You";
+		mood = mood || "good";
+
+		console.log("Hello, " + name +
+					" I am " + this.name +
+					" and I am in a " + mood + " mood!");
+	},
+
+	species: 'Homo Sapien'
+}
+
+function Person (name){
+	this.name = name;
+}
+
+Person.prototype = personPrototype;
+
+jim = new Person("Jim")
+nick = new Person("nick")
